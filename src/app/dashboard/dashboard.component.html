@@ -3,61 +3,71 @@
         <div class="col-sm-4">
             <div class="box">
                 <h6>High </h6>
-                <h1 class="high">12</h1>
+                <h1 class="high" (click)="getData('High')">12</h1>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="box">
                 <h6>Medium </h6>
-                <h1 class="medium">12</h1>
+                <h1 class="medium" (click)="getData('Medium')">12</h1>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="box">
                 <h6>Low </h6>
-                <h1 class="low">12</h1>
+                <h1 class="low" (click)="getData('Low')">12</h1>
             </div>
         </div>
     </div>
-    <div class="row" style="margin-top: 20px;">
+    <div class="row" style="margin-top: 20px;" *ngIf="showData">
         <div class="col-sm-12">
-            <table class="table table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Customer Name</th>
-                        <th>Transaction Amount</th>
-                        <th>Country</th>
-                    </tr>
-                    
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Shiva</td>
-                        <td>10000</td>
-                        <td>India</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Shiva</td>
-                        <td>10000</td>
-                        <td>India</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Shiva</td>
-                        <td>10000</td>
-                        <td>India</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Shiva</td>
-                        <td>10000</td>
-                        <td>India</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">{{cardHeading}} Rish Data
+                        <span style="float: right;cursor: pointer;" (click)="hideData()">X</span>
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Customer Name</th>
+                                <th>Transaction Amount</th>
+                                <th>Country</th>
+                            </tr>
+                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Shiva</td>
+                                <td>10000</td>
+                                <td>India</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Shiva</td>
+                                <td>10000</td>
+                                <td>India</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Shiva</td>
+                                <td>10000</td>
+                                <td>India</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Shiva</td>
+                                <td>10000</td>
+                                <td>India</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
         </div>
     </div>
 </div>
