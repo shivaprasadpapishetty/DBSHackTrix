@@ -1,19 +1,19 @@
 <div class="container">
     <div class="row" style="margin-top:20px">
         <div class="col-sm-4">
-            <div class="box">
+            <div class="box animate__animated animate__zoomInDown">
                 <h6>High </h6>
                 <h1 class="high" (click)="getData('High')">12</h1>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="box">
+            <div class="box animate__animated animate__zoomInDown">
                 <h6>Medium </h6>
                 <h1 class="medium" (click)="getData('Medium')">12</h1>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="box">
+            <div class="box animate__animated animate__zoomInDown">
                 <h6>Low </h6>
                 <h1 class="low" (click)="getData('Low')">12</h1>
             </div>
@@ -21,7 +21,7 @@
     </div>
     <div class="row" style="margin-top: 20px;" *ngIf="showData">
         <div class="col-sm-12">
-            <div class="card">
+            <div class="card animate__animated animate__zoomInDown">
                 <div class="card-header">
                     <h4 class="card-title">{{cardHeading}} Risk Data
                         <span style="float: right;cursor: pointer;" (click)="hideData()">X</span>
